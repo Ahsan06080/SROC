@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradio App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <script>
+        // Check authentication
+        if (localStorage.getItem('authenticated') !== 'true') {
+            window.location.href = 'index.html';
+        }
+    </script>
+    <h1>My Gradio App</h1>
+    <iframe src="https://huggingface.co/spaces/OAnalytics/sroc_leo_demo" width="100%" height="500px"></iframe>
+</body>
+</html>
